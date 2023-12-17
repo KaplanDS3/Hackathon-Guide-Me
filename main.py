@@ -36,8 +36,10 @@ class MyGrid(GridLayout):
         name = self.name.text
         lastName = self.lastName.text
         email = self.email.text
-
         print(name, lastName, email)
+        self.name.text = ""
+        self.lastName.text = ""
+        self.email.text = ""
 
 
 class Main(App):
