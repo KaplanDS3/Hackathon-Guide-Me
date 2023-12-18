@@ -12,7 +12,7 @@ class FirstScreen(Widget):
         super(FirstScreen, self).__init__(**kwargs)
 
         with self.canvas:
-            #Color(0, 0, 0, 1)
+            # Color(0, 0, 0, 1)
 
             # Setting the size and position of canvas
             self.rect = Rectangle(source="redalert.png",
@@ -28,7 +28,7 @@ class FirstScreen(Widget):
 
 
 class noBoomShelter(App):
+
+
     def build(self):
         return FirstScreen()
-
-
