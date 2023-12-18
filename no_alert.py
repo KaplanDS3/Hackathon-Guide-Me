@@ -31,5 +31,3 @@ class no_alert(App):
     def build(self):
         return FirstScreen()
 
-
-no_alert().run()

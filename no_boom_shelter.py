@@ -32,4 +32,3 @@ class noBoomShelter(App):
         return FirstScreen()
 
 
-noBoomShelter().run()
