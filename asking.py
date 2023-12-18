@@ -12,11 +12,20 @@ Config.set('graphics', 'resizable', True)
 
 class Button_yes(App):
     def build(self):
-        btn = Button(background_normal='button_yes.png',
-                     size_hint=(.5, 0.1),
-                     pos_hint={"x": 0.1, "y": 0.2}
-                     )
-        return btn
+        btn_yes = Button(background_normal='button_yes.png',
+                         size_hint=(.5, 0.1),
+                         pos_hint={"x": 0.1, "y": 0.2}
+                         )
+        return btn_yes
+
+
+class Button_no(App):
+    def build(self):
+        btn_no = Button(background_normal='no_button.png',
+                        size_hint=(.5, 0.1),
+                        pos_hint={"x": 0.1, "y": 0.2}
+                        )
+        return btn_no
 
 
 class FirstScreen(Widget):
@@ -45,6 +54,6 @@ class ask_screen(App):
         return FirstScreen()
 
 
-#root = Button_yes()
-#root.run()
+# root = Button_yes()
+# root.run()
 ask_screen().run()
