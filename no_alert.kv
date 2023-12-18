@@ -1,0 +1,24 @@
+<Background>:
+    id: main_win
+    orientation: "vertical"
+    spacing: 10
+    space_x: self.size[0]/3
+
+
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            source:'no_alert.png'
+            size: root.width, root.height
+            pos: self.pos
+
+    Button:
+        background_normal: 'settings_button.png'
+        size_hint: .1, .2
+        size_hint_y: None
+        size_hint_x: None
+        pos_hint: {"x":0.80, "y":0.50}
+        allow_stretch: True
+        keep_ratio: True
+
