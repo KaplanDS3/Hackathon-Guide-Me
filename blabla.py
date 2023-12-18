@@ -2,7 +2,6 @@ from kivy.graphics import Rectangle
 from kivy.uix.boxlayout import BoxLayout
 from kivy.app import App
 from kivy.core.window import Window
-import kivy.uix.button as Button
 
 Window.size = (350, 600)
 
@@ -12,11 +11,10 @@ class Background(BoxLayout):
         super().__init__(**kwargs)
 
 
-
-class ask_screen(App):
+class no_alert(App):
     def build(self):
         return Background()
 
 
 if __name__ == '__main__':
-    ask_screen().run()
+    no_alert().run()

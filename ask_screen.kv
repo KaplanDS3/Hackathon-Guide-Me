@@ -9,16 +9,18 @@
         Color:
             rgba: (1, 1, 1, 1)
         Rectangle:
-            source:'no_alert.png'
+            source:'asking.png'
             size: root.width, root.height
             pos: self.pos
 
+
+
+<ask_screen>:
     Button:
-        background_normal: 'settings_button.png'
-        size_hint: .1, .4
+        background_normal: 'button_yes.png'
+        size_hint: .1, .2
         size_hint_y: None
         size_hint_x: None
         pos_hint: {"x":0.80, "y":0.50}
         allow_stretch: True
         keep_ratio: True
-
