@@ -4,7 +4,7 @@ import no_alert
 import audio
 
 
-def Main():
+def main():
     alarm = True
     hasBoomShelter = False
     if not alarm:
@@ -20,4 +20,4 @@ def Main():
 
 
 if __name__ == '__main__':
-    Main()
+    main()
