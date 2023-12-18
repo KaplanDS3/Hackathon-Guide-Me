@@ -2,6 +2,7 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.graphics import Rectangle, Color
 from kivy.core.window import Window
+import audio
 
 Window.size = (350, 600)
 
@@ -12,7 +13,7 @@ class FirstScreen(Widget):
         super(FirstScreen, self).__init__(**kwargs)
 
         with self.canvas:
-            #Color(0, 0, 0, 1)
+            # Color(0, 0, 0, 1)
 
             # Setting the size and position of canvas
             self.rect = Rectangle(source="no_alert.png",
@@ -30,4 +31,3 @@ class FirstScreen(Widget):
 class no_alert(App):
     def build(self):
         return FirstScreen()
-

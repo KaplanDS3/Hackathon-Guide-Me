@@ -1,23 +1,21 @@
-from kivy.app import App
-from kivy.uix.widget import Widget
-from kivy.graphics import Rectangle, Color
 import no_boom_shelter
 import yes_boom_shelter
 import no_alert
-from kivy.core.window import Window
-
-Window.size = (400, 700)
+import audio
 
 
-class Main():
+def Main():
     alarm = True
-    hasBoomShelter = True
+    hasBoomShelter = False
     if not alarm:
+        audio.no_red_alart()
         no_alert.no_alert().run()
     else:
         if hasBoomShelter:
+            audio.red_alart_area()
             yes_boom_shelter.yes_boom_shelter().run()
         else:
+            audio.no_shelter_around()
             no_boom_shelter.noBoomShelter().run()
 
 
