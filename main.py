@@ -10,8 +10,8 @@ Window.size = (400, 700)
 
 
 class Main():
-    alarm = False
-    hasBoomShelter = False
+    alarm = True
+    hasBoomShelter = True
     if not alarm:
         no_alert.no_alert().run()
     else:
