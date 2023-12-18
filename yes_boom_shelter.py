@@ -3,7 +3,6 @@ from kivy.uix.widget import Widget
 from kivy.graphics import Rectangle, Color
 from kivy.core.window import Window
 import google_maps
-import audio
 
 Window.size = (350, 600)
 
