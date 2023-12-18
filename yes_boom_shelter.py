@@ -32,4 +32,4 @@ class yes_boom_shelter(App):
         return FirstScreen()
 
 
-yes_boom_shelter().run()
+

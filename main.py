@@ -1,22 +1,25 @@
-import kivy
-from kivymd.app import MDApp
-from kivy.uix.label import Label
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
+from kivy.app import App
 from kivy.uix.widget import Widget
+from kivy.graphics import Rectangle, Color
+import no_boom_shelter
+import yes_boom_shelter
+import no_alert
 from kivy.core.window import Window
+
 Window.size = (400, 700)
 
 
-class MyGrid(Widget):
-    pass
-
-
-class Main(MDApp):
-    def build(self):
-        return MyGrid()
+class Main():
+    alarm = False
+    hasBoomShelter = False
+    if not alarm:
+        no_alert.no_alert().run()
+    else:
+        if hasBoomShelter:
+            yes_boom_shelter.yes_boom_shelter().run()
+        else:
+            no_boom_shelter.noBoomShelter().run()
 
 
 if __name__ == '__main__':
-    Main().run()
+    Main()
